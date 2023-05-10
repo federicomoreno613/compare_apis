@@ -1,8 +1,6 @@
 @Author: Federico Moreno
 
-# API Marvik
-
-API Marvik es una API desarrollada en Golang que permite obtener la fecha y hora actual, así como aumentar un contador cada vez que se accede a un endpoint específico.
+# API
 
 ## Requisitos
 * Docker
@@ -24,13 +22,6 @@ La API expone los siguientes endpoints:
   * Ejemplo: ```POST /date?full_format=false``` Devuelve la fecha actual en formato ISO 8601, **sin incluir** hora, minutos ni segundos.
 * ```GET /counter```: incrementa el contador y devuelve su valor actual.
 
-## Docker
-La imagen Docker para esta API ya fue creada y esta disponible en Docker Hub.
-
-```bash
-docker run -p 8080:8080 federicomoreno613/api-marvik
-```
-----
 
 ### Notas de implementación
 #### Atomics vs locks
