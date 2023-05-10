@@ -28,3 +28,26 @@ docker-compose up -d
 ```
 /tester_api/EDA_requests.ipynb
 ```
+
+Cómo esta demostrado en el código la api en FASTAPI sin atomics no mantiene consistencia en el conteo en cambio la de golang si.
+Por otro lado el tiempo de delay es en promedio decil a decile menor en Golang que en python. Sin embargo encontramos que golang tarda más en responder en 1246 muestras sobre 10.000 esto es un 12%
+de las veces pero en promedio tarda menos.
+
+### Displot de tiempos de respuestas
+![Distplot](/tester_api/distplot.png)
+
+### Media del response tiempo por deciles
+![response time by deciles](/tester_api/distplot.png)
+
+### Describe de las respuestas de golang con delay
+
+|           | delay_golang |
+|-----------|--------------|
+| 25%       | 2.149170     |
+| 50%       | 5.360718     |
+| 75%       | 13.298706    |
+| count     | 1246.000000  |
+| max       | 587.762939   |
+| mean      | 28.635691    |
+| min       | 0.000977     |
+| std       | 73.729192    |
