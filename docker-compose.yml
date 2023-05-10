@@ -1,0 +1,23 @@
+version: "3.9"
+
+services:
+  golang-api-test:
+    build:
+      context: ./api-test
+    container_name: api-test
+    restart: always
+    environment:
+      - PORT=8080
+    ports:
+      - "8080:8080"
+
+  py-api-test:
+    build:
+      context: ./py-api-test
+    container_name: py-api-test
+    restart: always
+    environment:
+      - ENV PATH="/usr/local/bin:${PATH}"
+      - PORT=8081
+    ports:
+      - "8081:8081"
