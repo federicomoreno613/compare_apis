@@ -9,7 +9,7 @@ El repositorio se organiza de la siguiente manera:
 - `py-api-test/`: Carpeta que contiene el código fuente de la API en Python.
 - `api-test/`: Carpeta que contiene el código fuente de la API en Golang.
 - `docker-compose.yml`: Archivo de configuración de Docker Compose para levantar los servicios.
-- `results.ipynb`: Jupyter Notebook para analizar y comparar los resultados.
+- `EDA_requests.ipynb`: Jupyter Notebook para analizar y comparar los resultados.
 
 
 
