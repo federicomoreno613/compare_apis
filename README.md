@@ -34,9 +34,17 @@ Como se puede comprobar en el código, la API en FASTAPI, sin el uso de atomics,
 Por otro lado, se observa que el tiempo de retraso promedio es considerablemente menor en Golang en comparación con Python. No obstante, se ha encontrado que Golang tarda más en responder en 1246 muestras de un total de 10.000, lo cual representa un 12% de las veces. Sin embargo, en promedio, Golang presenta tiempos de respuesta más rápidos.
 
 ### Displot de tiempos de respuestas
+
+Un displot es una herramienta visual que permite observar la distribución de los datos en un conjunto de tiempos de respuesta. Proporciona una representación gráfica de la frecuencia con la que ocurren diferentes valores de tiempo de respuesta.
+
 ![Distplot](/tester_api/distplot.png)
 
 ### Media del response tiempo por deciles
+
+El motivo de realizar un gráfico que compare la media de respuesta por deciles entre las APIs de Golang y Python es analizar y visualizar de manera más clara cómo se distribuyen los tiempos de respuesta en ambos sistemas.
+
+El título "Media del response tiempo por deciles" indica que se está calculando la media (promedio) de los tiempos de respuesta en diferentes puntos de la distribución, dividiendo los datos en diez partes iguales, conocidas como deciles.
+
 ![response time by deciles](/tester_api/mean_response_time.png)
 
 ### Describe de las respuestas de golang con delay
