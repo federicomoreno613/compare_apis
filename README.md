@@ -37,7 +37,7 @@ de las veces pero en promedio tarda menos.
 ![Distplot](/tester_api/distplot.png)
 
 ### Media del response tiempo por deciles
-![response time by deciles](/tester_api/distplot.png)
+![response time by deciles](/tester_api/mean_response_time.png)
 
 ### Describe de las respuestas de golang con delay
 
