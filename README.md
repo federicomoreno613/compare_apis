@@ -41,6 +41,8 @@ Por otro lado, se observa que el tiempo de retraso promedio es considerablemente
 
 ### Describe de las respuestas de golang con delay
 
+El resumen estadístico (describe) del delay en las respuestas de la API de Golang nos proporciona información importante sobre los tiempos de respuesta en un escenario específico. Este resumen nos ayuda a comprender mejor el comportamiento de la API cuando se introduce un retraso intencional en el procesamiento de las solicitudes.
+
 |           | delay_golang |
 |-----------|--------------|
 | 25%       | 2.149170     |
